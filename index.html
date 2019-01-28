@@ -1,0 +1,36 @@
+<html>
+oi
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.23.0/locale/pt-br.js"></script>
+</head>
+
+
+
+<body>
+    <input type="date" id="date">
+</body>
+
+<script>
+
+    let datenow = moment().format('YYYY-MM-DD')
+
+    console.info(datenow);
+
+    $('#date').change(function(){
+
+        console.info($("#date").val());
+
+        if($("#date").val() == datenow) {
+            alert('não pode');
+        }
+    })
+</script>
+
+</html>
